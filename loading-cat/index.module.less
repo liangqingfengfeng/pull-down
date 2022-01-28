@@ -1,0 +1,51 @@
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-38px);
+  z-index: -111;
+  
+  .loaderImgDynamic {
+    width: 26px;
+    height: 26px;
+    background: url("./img/red-circle.png") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate (360deg);
+    -webkit-transform: rotate (360deg);
+    animation: rotation 1s linear infinite;
+    -moz-animation: rotation 1s linear infinite;
+    -webkit-animation: rotation 1s linear infinite ;
+    -o-animation: rotation 1s linear infinite;
+  
+  
+    @-webkit-keyframes rotation{
+      from { -webkit-transform: rotate(0deg);}
+      to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes rotation {
+      from { -webkit-transform: rotate(0deg);}
+      to { -webkit-transform: rotate(360deg); }
+    }
+    
+  }
+  .loaderImg {
+    width: 26px;
+    height: 26px;
+    background: url("./img/red-circle.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .innnerLoading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 26px;
+    height: 26px;
+    background: url("./img/cat.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
